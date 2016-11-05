@@ -118,7 +118,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Course_Project_1.R</h1>
 <h4 class="author"><em>Alexandre_Chaves</em></h4>
-<h4 class="date"><em>Fri Nov 04 22:16:08 2016</em></h4>
+<h4 class="date"><em>Fri Nov 04 22:30:58 2016</em></h4>
 
 </div>
 
@@ -126,6 +126,9 @@ $(document).ready(function () {
 <pre class="r"><code>## Loading and preprocessing the data
 
 library(ggplot2)
+
+download.file(&quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;, dest=&quot;activity.zip&quot;, mode=&quot;wb&quot;) 
+unzip (&quot;activity.zip&quot;)
 activity &lt;- read.csv(&quot;activity.csv&quot;,stringsAsFactors = F)
 activity$date = as.Date(activity$date)
 # Clean NA's &amp; steps = 0

@@ -2,6 +2,9 @@
 ## Loading and preprocessing the data
 
 library(ggplot2)
+
+download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", dest="activity.zip", mode="wb") 
+unzip ("activity.zip")
 activity <- read.csv("activity.csv",stringsAsFactors = F)
 activity$date = as.Date(activity$date)
 # Clean NA's & steps = 0
