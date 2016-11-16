@@ -1,6 +1,6 @@
 ---
 title: "Course Project 1"
-author: "Alexandre Chaves"
+author: aakanshaaa"
 date: "November 4, 2016"
 output: html_document
 ---
@@ -90,7 +90,7 @@ x=summary(activity)
 print(x[7])
 ```
 
-#2) Strategy for NA´s => replace by 5-minute interval
+#2) Strategy for NAÂ´s => replace by 5-minute interval
 
 ```{r,echo=TRUE}
 # 3)
